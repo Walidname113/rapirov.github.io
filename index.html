@@ -16,7 +16,6 @@
             background-color: black;
             border: 2px solid white;
             border-radius: 20px;
-            position: relative;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -32,11 +31,10 @@
             justify-content: center;
         }
         .button-container .button-wrapper {
+            width: auto;
+            padding: 5px; /* Уменьшаем отступы между кнопками */
             display: flex;
             justify-content: center;
-            padding: 10px;
-            width: calc(50% - 5px); /* Уменьшаем ширину, чтобы кнопки были ближе друг к другу */
-            box-sizing: border-box;
         }
         .button-container .button-wrapper button {
             background-color: black;
@@ -46,7 +44,6 @@
             border-radius: 10px;
             font-size: 16px;
             cursor: pointer;
-            margin: 0; /* Убираем отступы между кнопками */
         }
     </style>
 </head>
