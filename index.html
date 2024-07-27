@@ -31,20 +31,23 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-        .button-container div {
-            width: 50%;
+        .button-container .button-wrapper {
             display: flex;
             justify-content: center;
-            padding: 10px 0;
+            width: 100%;
         }
-        .button-container button {
+        .button-container .button-wrapper button {
             background-color: black;
             border: 2px solid white;
-            color: darkgreen;
+            color: white;
             padding: 10px 20px;
             border-radius: 10px;
             font-size: 16px;
             cursor: pointer;
+            margin: 10px;
+        }
+        .button-container .button-wrapper.half {
+            width: 50%;
         }
     </style>
 </head>
@@ -52,10 +55,10 @@
     <div class="box">
         <h2>Привет!</h2>
         <div class="button-container">
-            <div><button>Кнопка</button></div>
-            <div><button>Кнопка</button></div>
-            <div><button>Кнопка</button></div>
-            <div><button>Кнопка</button></div>
+            <div class="button-wrapper half"><button>Кнопка</button></div>
+            <div class="button-wrapper half"><button>Кнопка</button></div>
+            <div class="button-wrapper half"><button>Кнопка</button></div>
+            <div class="button-wrapper half"><button>Кнопка</button></div>
         </div>
     </div>
 </body>
