@@ -13,24 +13,45 @@
         }
         .box {
             width: 800px;
-            height: 500px;
             background-color: black;
             border: 2px solid white;
             border-radius: 20px;
             position: relative;
+            padding: 20px;
+            box-sizing: border-box;
         }
         .box h2 {
             color: darkgreen;
             text-align: center;
-            margin: 0;
-            padding: 20px 0;
+            margin: 0 0 20px 0;
             font-size: 36px;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .button-container button {
+            background-color: black;
+            border: 2px solid white;
+            color: darkgreen;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
     <div class="box">
-        <h2>Rapirov “Обо Мне”</h2>
+        <h2>Привет!</h2>
+        <div class="button-container">
+            <button>Кнопка</button>
+            <button>Кнопка</button>
+            <button>Кнопка</button>
+            <button>Кнопка</button>
+        </div>
     </div>
 </body>
 </html>
