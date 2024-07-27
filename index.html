@@ -49,7 +49,13 @@
         .button-row button:hover, .button-row button:focus {
             transform: scale(1.1); /* Увеличение кнопки */
             color: lightgreen; /* Изменение цвета текста на светло-зеленый */
+            -webkit-tap-highlight-color: transparent;
         }
+
+        .button-row button:active {
+            -webkit-tap-highlight-color: transparent;
+        }
+        
     </style>
 </head>
 <body>
