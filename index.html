@@ -44,6 +44,11 @@
             font-size: 16px;
             cursor: pointer;
             margin: 5px; /* Отступ между кнопками */
+            transition: transform 0.3s, color 0.3s; /* Плавный переход для увеличения и изменения цвета */
+        }
+        .button-row button:hover, .button-row button:focus {
+            transform: scale(1.1); /* Увеличение кнопки */
+            color: lightgreen; /* Изменение цвета текста на светло-зеленый */
         }
     </style>
 </head>
