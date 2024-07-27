@@ -34,20 +34,19 @@
         .button-container .button-wrapper {
             display: flex;
             justify-content: center;
-            width: 100%;
+            padding: 10px;
+            width: calc(50% - 20px); /* Уменьшаем ширину, чтобы кнопки были ближе друг к другу */
+            box-sizing: border-box;
         }
         .button-container .button-wrapper button {
             background-color: black;
             border: 2px solid white;
-            color: darkgreen;
+            color: white;
             padding: 10px 20px;
             border-radius: 10px;
             font-size: 16px;
             cursor: pointer;
-            margin: 3px;
-        }
-        .button-container .button-wrapper.half {
-            width: 50%;
+            margin: 0; /* Убираем отступы между кнопками */
         }
     </style>
 </head>
@@ -55,10 +54,10 @@
     <div class="box">
         <h2>Привет!</h2>
         <div class="button-container">
-            <div class="button-wrapper half"><button>Кнопка</button></div>
-            <div class="button-wrapper half"><button>Кнопка</button></div>
-            <div class="button-wrapper half"><button>Кнопка</button></div>
-            <div class="button-wrapper half"><button>Кнопка</button></div>
+            <div class="button-wrapper"><button>Кнопка</button></div>
+            <div class="button-wrapper"><button>Кнопка</button></div>
+            <div class="button-wrapper"><button>Кнопка</button></div>
+            <div class="button-wrapper"><button>Кнопка</button></div>
         </div>
     </div>
 </body>
