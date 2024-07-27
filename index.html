@@ -27,16 +27,15 @@
         }
         .button-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
-        .button-container .button-wrapper {
-            width: auto;
-            padding: 5px; /* Уменьшаем отступы между кнопками */
+        .button-row {
             display: flex;
             justify-content: center;
+            margin-bottom: 10px; /* Отступ между строками кнопок */
         }
-        .button-container .button-wrapper button {
+        .button-row button {
             background-color: black;
             border: 2px solid white;
             color: white;
@@ -44,6 +43,7 @@
             border-radius: 10px;
             font-size: 16px;
             cursor: pointer;
+            margin: 5px; /* Отступ между кнопками */
         }
     </style>
 </head>
@@ -51,10 +51,14 @@
     <div class="box">
         <h2>Привет!</h2>
         <div class="button-container">
-            <div class="button-wrapper"><button>Кнопка</button></div>
-            <div class="button-wrapper"><button>Кнопка</button></div>
-            <div class="button-wrapper"><button>Кнопка</button></div>
-            <div class="button-wrapper"><button>Кнопка</button></div>
+            <div class="button-row">
+                <button>Кнопка</button>
+                <button>Кнопка</button>
+            </div>
+            <div class="button-row">
+                <button>Кнопка</button>
+                <button>Кнопка</button>
+            </div>
         </div>
     </div>
 </body>
