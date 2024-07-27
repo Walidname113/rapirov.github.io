@@ -31,12 +31,17 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+        .button-container div {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
         .button-container button {
             background-color: black;
             border: 2px solid white;
             color: darkgreen;
             padding: 10px 20px;
-            margin: 10px;
             border-radius: 10px;
             font-size: 16px;
             cursor: pointer;
@@ -47,10 +52,10 @@
     <div class="box">
         <h2>Привет!</h2>
         <div class="button-container">
-            <button>Кнопка</button>
-            <button>Кнопка</button>
-            <button>Кнопка</button>
-            <button>Кнопка</button>
+            <div><button>Кнопка</button></div>
+            <div><button>Кнопка</button></div>
+            <div><button>Кнопка</button></div>
+            <div><button>Кнопка</button></div>
         </div>
     </div>
 </body>
