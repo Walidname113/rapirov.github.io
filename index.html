@@ -77,6 +77,10 @@
             z-index: 2; /* Помещаем над всем контентом */
             cursor: pointer;
         }
+        
+        .click-overlay:active, .click-overlay:focus, .click-overlay:hover {
+            -webkit-tap-highlight-color: transparent;
+        }
     </style>
 </head>
 <body>
