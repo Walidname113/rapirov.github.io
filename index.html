@@ -21,6 +21,7 @@
             border-radius: 20px;
             padding: 20px;
             box-sizing: border-box;
+            z-index: 1;
         }
         .video-background {
             position: absolute;
@@ -67,20 +68,14 @@
         .button-row button:active {
             -webkit-tap-highlight-color: transparent;
         }
-        .play-button {
-            background-color: darkgreen;
-            border: 2px solid white;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
-            font-size: 20px;
+        .click-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2; /* Помещаем над всем контентом */
             cursor: pointer;
-            margin-top: 20px;
-            transition: transform 0.3s, background-color 0.3s;
-        }
-        .play-button:hover {
-            transform: scale(1.1);
-            background-color: lightgreen;
         }
     </style>
 </head>
@@ -98,14 +93,15 @@
                 <button onclick="window.location.href='https://example.com'">Кнопка 4</button>
             </div>
         </div>
-        <button class="play-button" onclick="playVideo()">Воспроизвести видео со звуком</button>
     </div>
+    <div class="click-overlay" onclick="playVideo()"></div>
 
     <script>
         function playVideo() {
             var video = document.getElementById('video-background');
             video.muted = false;
             video.play();
+            document.querySelector('.click-overlay').style.display = 'none'; // Удаляем оверлей после клика
         }
     </script>
 </body>
